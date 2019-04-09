@@ -31,8 +31,10 @@ def items
 end
 
 def void_last_transaction(quantity = 1, price)
-  @last_item = price * quantity
-  @total -= @last_item
+  # @last_item = price * quantity
+  # @total -= @last_item
+  
+  self.total = self.total - self.last_item
 end
 
 
