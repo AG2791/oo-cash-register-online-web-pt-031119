@@ -30,7 +30,7 @@ def items
   @cart
 end
 
-def void_last_transaction(price, quantity = 1)
+def void_last_transaction(price, quantity-1)
   @last_item = price * quantity
   @total -= @last_item
   
